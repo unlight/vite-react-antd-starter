@@ -1,7 +1,7 @@
 /// <reference types="vitest" />
-import path from 'path';
-import { defineConfig, ConfigEnv, UserConfigExport } from 'vite';
 import reactRefresh from '@vitejs/plugin-react';
+import path from 'path';
+import { ConfigEnv, UserConfigExport, defineConfig } from 'vite';
 import tsconfigPaths from 'vite-tsconfig-paths';
 
 // https://vitejs.dev/config/

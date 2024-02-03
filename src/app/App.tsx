@@ -1,10 +1,8 @@
 import './App.css';
-
-import { DatePicker } from 'antd';
-import React from 'react';
-
 import { AppErrorBoundary } from './AppErrorBoundary';
 import ClickCounter from './ClickCounter';
+import { DatePicker } from 'antd';
+import React from 'react';
 
 export function App() {
   return (
