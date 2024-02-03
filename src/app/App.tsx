@@ -1,5 +1,6 @@
 import './App.css';
 
+import { DatePicker } from 'antd';
 import React from 'react';
 
 import { AppErrorBoundary } from './AppErrorBoundary';
@@ -10,6 +11,7 @@ export function App() {
     <AppErrorBoundary>
       <h4>Hello from app</h4>
       <ClickCounter />
+      <DatePicker />
     </AppErrorBoundary>
   );
 }

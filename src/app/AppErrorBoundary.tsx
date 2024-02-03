@@ -10,7 +10,7 @@ export class AppErrorBoundary extends React.Component<
     return { error };
   }
   readonly state = {
-    error: unknown,
+    error: undefined as any,
   };
 
   componentDidCatch(error: unknown, errorInfo: unknown) {
