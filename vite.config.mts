@@ -1,4 +1,3 @@
-/// <reference types="vitest" />
 import reactRefresh from '@vitejs/plugin-react';
 import path from 'path';
 import { ConfigEnv, UserConfigExport, defineConfig } from 'vite';

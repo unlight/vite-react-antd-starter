@@ -23,7 +23,13 @@ module.exports = {
     warnOnUnsupportedTypeScriptVersion: false,
   },
   plugins: ['unicorn', '@typescript-eslint', 'prettier', 'only-warn'],
-  ignorePatterns: ['@generated/**', '*.config.js', '.*rc.js'],
+  ignorePatterns: [
+    '@generated/**',
+    '*.config.js',
+    '.*rc.cjs',
+    '*.config.cjs',
+    '*.config.mts',
+  ],
   rules: {
     // core
     'consistent-return': [1, { treatUndefinedAsUnspecified: true }],
@@ -44,6 +50,15 @@ module.exports = {
           prod: false,
           ref: false,
           params: false,
+        },
+      },
+    ],
+    'unicorn/filename-case': [
+      'warn',
+      {
+        cases: {
+          kebabCase: true,
+          pascalCase: true,
         },
       },
     ],
