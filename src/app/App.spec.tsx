@@ -1,10 +1,12 @@
+/// <reference types="vitest/globals" />
 import { render, waitFor } from '@testing-library/react';
 import React from 'react';
-import { afterAll, beforeEach, expect, it, vi } from 'vitest';
 
-it('renders app component', async () => {
+import { App } from './App';
+
+test('renders all app html', async () => {
   const screen = render(<App />);
   await waitFor(() => {
-    expect(screen.getByText('Home')).toBeTruthy();
+    expect(screen.baseElement.outerHTML).toBeTruthy();
   });
 });

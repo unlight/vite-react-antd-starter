@@ -9,6 +9,7 @@
     "importHelpers": true,
     "strict": true,
     "jsx": "react",
+    "noEmit": true,
     "noUncheckedIndexedAccess": true,
     "noImplicitAny": false,
     "experimentalDecorators": true,
@@ -21,8 +22,11 @@
     "declaration": false,
     "declarationMap": false,
     "skipLibCheck": true,
-    "lib": ["esnext"],
-    "paths": {}
+    "lib": ["DOM", "esnext"],
+    "baseUrl": ".",
+    "paths": {
+      "@/*": ["./src/*"]
+    }
   },
   "include": ["src"]
 }

@@ -1,6 +1,7 @@
 ## Tasks
 
 - `npm run dev`
+- `npm run build`
 
 ## Resources
 
@@ -10,6 +11,10 @@
 - https://github.com/stars/unlight/lists/buildtools
 - https://github.com/stars/unlight/lists/mystack
 - https://github.com/stars/unlight/lists/codequality
+
+## Todo
+
+- https://github.com/bvaughn/react-error-boundary
 
 ## License
 

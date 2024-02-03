@@ -6,14 +6,14 @@ import React, { PropsWithChildren } from 'react';
 export class AppErrorBoundary extends React.Component<
   PropsWithChildren<unknown>
 > {
-  static getDerivedStateFromError(error: any) {
+  static getDerivedStateFromError(error: unknown) {
     return { error };
   }
   readonly state = {
-    error: undefined as any,
+    error: unknown,
   };
 
-  componentDidCatch(error: any, errorInfo: any) {
+  componentDidCatch(error: unknown, errorInfo: unknown) {
     console.error(error, errorInfo);
   }
 
